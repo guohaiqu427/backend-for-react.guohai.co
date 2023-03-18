@@ -70,12 +70,30 @@ auth.js
     gen and return jwt 
 
 
-category.js 
-    get / 
-    get / id
-    post /
-    put /id
-    delete /id
-    
+routes & moodels.js 
+    model: 
+        schema -> model -> validate -> export 
+
+        route
+            get / 
+            get / id
+                - check exitence 
+
+            post /  
+                - check user input
+                - save
+
+            put /id
+                - check user input
+                - check existence
+                    - check linked docs with id 
+                - update
+                - save
+
+            delete /id
+                - find by id 
+                - check existence 
+                - delete 
+            
 
     
